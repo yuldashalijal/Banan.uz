@@ -4,16 +4,44 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/app.css">
 
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>Document</title>
+    <title>Banan.uz</title>
   </head>
   <body>
-    <h2
-      class="bg-cyan-600 h-[200px] w-[500px] m-auto mt-6 p-12 text-lg text-center rounded-[10px] text-white "
-    >
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    </h2>
+    <header class="shadow-2xl bg-slate-400 cursor-pointer">
+      <div class="container mx-auto flex justify-end py-6">
+        <nav class="flex gap-8">
+          <select
+            id="sortlash"
+            class="rounded-[4px] bg-zinc-600 text-white p-1"
+          >
+            <option disabled selected>Saralash</option>
+            <option value="A-z">A-z</option>
+            <option value="z-A">z-A</option>
+          </select>
+          <select id="brend" class="rounded-[4px] bg-zinc-600 text-white p-1">
+            <option disabled selected>Saralangan brendlar</option>
+          </select>
+        </nav>
+      </div>
+    </header>
+    <main class="w-full bg-slate-100">
+      <div class="container mx-auto">
+        
+        <div class="flex p-12 wrapper flex-wrap gap-6 justify-center">
+          <div class="card ">
+            
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./app.js"></script>
     <script src="./script.js"></script>
   </body>
 </html>
